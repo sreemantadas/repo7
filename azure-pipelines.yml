@@ -14,15 +14,4 @@ steps:
 - task: TerraformTaskV4@4
   inputs:
     provider: 'azurerm'
-    command: 'init'
-    backendServiceArm: 'Pay-As-You-Go(2)(79c65e59-aadb-45ab-9a43-3e10d9e5225e)'
-    backendAzureRmResourceGroupName: 'dimna-rg'
-    backendAzureRmStorageAccountName: 'dimna1234'
-    backendAzureRmContainerName: 'dimna-cont'
-    backendAzureRmKey: 'sree.tf'
-
-- task: TerraformTaskV4@4
-  inputs:
-    provider: 'azurerm'
     command: 'apply'
-    environmentServiceNameAzureRM: 'Pay-As-You-Go(3)(79c65e59-aadb-45ab-9a43-3e10d9e5225e)'
